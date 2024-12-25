@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Caesar Cipher Translator</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="./styles.css" />
+
+		<script src="./script.js" defer></script>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Caesar Cipher Translator (Decoder and Encoder)</h1>
+
+			<section>
+				<label for="inputText">Enter text or code:</label>
+				<textarea name="inputText" id="inputText"></textarea>
+				<br />
+				<br />
+
+				<label for="key">Enter Key</label>
+				<input type="number" id="key" placeholder="Enter key" />
+
+				<div style="margin: 40px 0px 15px 0px; display: flex; flex: 1; flex-direction: row; justify-content: center">
+					<div style="margin: 5px"><button id="encodeBtn">Encode</button></div>
+					<div style="margin: 5px"><button id="decodeBtn">Decode</button></div>
+				</div>
+
+				<label for="outputText">Result:</label>
+				<textarea name="outputText" id="outputText"></textarea>
+			</section>
+		</div>
+	</body>
+</html>
